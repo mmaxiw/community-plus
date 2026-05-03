@@ -12,6 +12,9 @@
     <div class="container">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p class="tagline">{{ site.description }}</p>
+      {% if site.form_url and site.form_url != "" %}
+        <a href="{{ site.form_url }}" class="cta-button" target="_blank" rel="noopener">+ הוסיפו את העסק שלכם</a>
+      {% endif %}
     </div>
   </header>
   <main class="container">

@@ -4,6 +4,10 @@ baseurl: "/community-plus"
 url: "https://mmaxiw.github.io"
 lang: he
 
+# הדבק כאן את ה-URL של טופס הגוגל אחרי שתיצור אותו (ראה automation/README.md).
+# כשהשדה ריק הכפתור פשוט לא יופיע באתר.
+form_url: ""
+
 collections:
   businesses:
     output: true
