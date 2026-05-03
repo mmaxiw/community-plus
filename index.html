@@ -40,4 +40,4 @@ layout: default
 
 <p id="empty-state" class="empty-state" hidden>לא נמצאו תוצאות. נסו חיפוש אחר או הסירו סינון.</p>
 
-<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/search.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
