@@ -15,7 +15,38 @@
     </div>
   </header>
   <main class="container">
-    {{ content }}
+    <div class="layout">
+      {% if site.data.menu and site.data.menu.groups %}
+        <aside class="sidebar" aria-label="תפריט קיצורי דרך">
+          <nav>
+            {% for group in site.data.menu.groups %}
+              <div class="menu-group">
+                <h3 class="menu-title">{{ group.title }}</h3>
+                <ul class="menu-list">
+                  {% for item in group.items %}
+                    {% capture link_hash %}{% if item.tag %}tag={{ item.tag | url_encode }}{% elsif item.q %}q={{ item.q | url_encode }}{% endif %}{% endcapture %}
+                    <li>
+                      <a href="{{ '/' | relative_url }}#{{ link_hash }}"
+                         class="menu-btn"
+                         {% if item.tag %}data-menu-tag="{{ item.tag | downcase }}"{% endif %}
+                         {% if item.q %}data-menu-query="{{ item.q | downcase }}"{% endif %}>
+                        {{ item.label }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+            <div class="menu-group">
+              <a href="{{ '/' | relative_url }}" class="menu-btn menu-btn-all" data-menu-clear>הצג את כל העסקים</a>
+            </div>
+          </nav>
+        </aside>
+      {% endif %}
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="container">

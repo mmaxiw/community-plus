@@ -12,16 +12,17 @@
 
   function readHash() {
     const hash = window.location.hash.replace(/^#/, '');
-    if (!hash) return;
     state.tags.clear();
     state.query = '';
-    hash.split('&').forEach(part => {
-      const [k, v] = part.split('=');
-      if (!k || v === undefined) return;
-      const value = decodeURIComponent(v.replace(/\+/g, ' '));
-      if (k === 'tag' && value) state.tags.add(value.toLowerCase());
-      if (k === 'q' && value) state.query = value;
-    });
+    if (hash) {
+      hash.split('&').forEach(part => {
+        const [k, v] = part.split('=');
+        if (!k || v === undefined) return;
+        const value = decodeURIComponent(v.replace(/\+/g, ' '));
+        if (k === 'tag' && value) state.tags.add(value.toLowerCase());
+        if (k === 'q' && value) state.query = value;
+      });
+    }
     if (input) input.value = state.query;
   }
 
@@ -52,6 +53,22 @@
     });
   }
 
+  function syncMenuActiveState() {
+    const q = state.query.trim().toLowerCase();
+    const noFilters = state.tags.size === 0 && !q;
+    document.querySelectorAll('.menu-btn').forEach(btn => {
+      let isActive = false;
+      if (btn.hasAttribute('data-menu-clear')) {
+        isActive = noFilters;
+      } else if (btn.dataset.menuTag) {
+        isActive = state.tags.size === 1 && state.tags.has(btn.dataset.menuTag) && !q;
+      } else if (btn.dataset.menuQuery) {
+        isActive = state.tags.size === 0 && q === btn.dataset.menuQuery;
+      }
+      btn.classList.toggle('active', isActive);
+    });
+  }
+
   function apply() {
     renderFilters();
     const q = state.query.trim().toLowerCase();
@@ -73,6 +90,7 @@
     });
     countEl.textContent = visible + ' מתוך ' + cards.length + ' עסקים';
     emptyEl.hidden = visible !== 0;
+    syncMenuActiveState();
   }
 
   if (input) {
