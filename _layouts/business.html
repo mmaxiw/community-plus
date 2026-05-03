@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="business-detail">
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" class="business-image">
+  {% endif %}
+  <h2>{{ page.name }}</h2>
+  {% if page.category %}<p class="category">{{ page.category }}</p>{% endif %}
+  {% if page.tags %}
+    <div class="tags">
+      {% for tag in page.tags %}
+        <a href="{{ '/' | relative_url }}#tag={{ tag | url_encode }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+  <div class="business-content">
+    {{ content }}
+  </div>
+  {% if page.contact %}
+    <div class="contact-block">
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        {% if page.contact.phone %}<li><strong>Phone:</strong> <a href="tel:{{ page.contact.phone }}">{{ page.contact.phone }}</a></li>{% endif %}
+        {% if page.contact.email %}<li><strong>Email:</strong> <a href="mailto:{{ page.contact.email }}">{{ page.contact.email }}</a></li>{% endif %}
+        {% if page.contact.website %}<li><strong>Website:</strong> <a href="{{ page.contact.website }}" rel="noopener" target="_blank">{{ page.contact.website }}</a></li>{% endif %}
+        {% if page.contact.address %}<li><strong>Address:</strong> {{ page.contact.address }}</li>{% endif %}
+      </ul>
+    </div>
+  {% endif %}
+  <p class="back-link"><a href="{{ '/' | relative_url }}">← Back to all listings</a></p>
+</article>

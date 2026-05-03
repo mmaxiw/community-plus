@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="search-section">
+  <input type="search" id="search-input" placeholder="Search by name, service, category, or tag…" autocomplete="off" autofocus>
+  <div id="active-filters" aria-live="polite"></div>
+  <p id="result-count" class="result-count" aria-live="polite"></p>
+</section>
+
+<section id="results" class="grid">
+  {% assign sorted = site.businesses | sort: "name" %}
+  {% for biz in sorted %}
+    <article class="card"
+             data-name="{{ biz.name | downcase | escape }}"
+             data-category="{{ biz.category | downcase | escape }}"
+             data-tags="{{ biz.tags | join: ',' | downcase | escape }}"
+             data-description="{{ biz.description | downcase | escape }}">
+      <a href="{{ biz.url | relative_url }}" class="card-link">
+        {% if biz.image %}
+          <img src="{{ biz.image | relative_url }}" alt="{{ biz.name }}" loading="lazy">
+        {% else %}
+          <div class="card-image-placeholder"></div>
+        {% endif %}
+        <div class="card-body">
+          <h3>{{ biz.name }}</h3>
+          {% if biz.category %}<p class="category">{{ biz.category }}</p>{% endif %}
+          {% if biz.description %}<p class="card-description">{{ biz.description }}</p>{% endif %}
+        </div>
+      </a>
+      {% if biz.tags %}
+        <div class="tags card-tags">
+          {% for tag in biz.tags %}
+            <button type="button" class="tag" data-tag="{{ tag }}">{{ tag }}</button>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
+
+<p id="empty-state" class="empty-state" hidden>No matches. Try a different search or remove a filter.</p>
+
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>

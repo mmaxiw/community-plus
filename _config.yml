@@ -1,0 +1,22 @@
+title: Community Plus
+description: A directory of local businesses and professionals
+baseurl: "/community-plus"
+url: "https://mmaxiw.github.io"
+
+collections:
+  businesses:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: businesses
+    values:
+      layout: business
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
