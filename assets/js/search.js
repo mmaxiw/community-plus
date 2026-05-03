@@ -41,7 +41,7 @@
       const chip = document.createElement('button');
       chip.type = 'button';
       chip.className = 'filter-chip';
-      chip.setAttribute('aria-label', 'Remove filter ' + t);
+      chip.setAttribute('aria-label', 'הסר סינון ' + t);
       chip.innerHTML = '<span>' + t + '</span><span class="x" aria-hidden="true">×</span>';
       chip.addEventListener('click', () => {
         state.tags.delete(t);
@@ -71,7 +71,7 @@
       card.hidden = !show;
       if (show) visible++;
     });
-    countEl.textContent = visible + ' of ' + cards.length + ' listing' + (cards.length === 1 ? '' : 's');
+    countEl.textContent = visible + ' מתוך ' + cards.length + ' עסקים';
     emptyEl.hidden = visible !== 0;
   }
 

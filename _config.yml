@@ -1,7 +1,8 @@
-title: Community Plus
-description: A directory of local businesses and professionals
+title: קהילה+
+description: מדריך עסקים ובעלי מקצוע בקהילה
 baseurl: "/community-plus"
 url: "https://mmaxiw.github.io"
+lang: he
 
 collections:
   businesses:

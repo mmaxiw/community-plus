@@ -1,25 +1,25 @@
 ---
-name: Sunrise Bakery
-category: Food & Drink
+name: מאפיית הזריחה
+category: אוכל ומשקאות
 image: https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=70
-tags: [bakery, food, bread, pastries, family-owned]
-description: Fresh bread, croissants, and cakes baked daily in a family-owned bakery.
+tags: [מאפייה, אוכל, לחם, מאפים, משפחתי]
+description: לחם, קרואסונים ועוגות טריים שנאפים מדי בוקר במאפייה משפחתית.
 contact:
-  phone: "+1 555 123 4567"
+  phone: "03-1234567"
   email: hello@sunrisebakery.example
   website: https://sunrisebakery.example
-  address: "123 Main St, Springfield"
+  address: "רחוב הרצל 12, תל אביב"
 ---
 
-Sunrise Bakery has been serving the neighborhood since 1998. We bake everything from scratch every morning using locally sourced flour and traditional techniques.
+מאפיית הזריחה משרתת את השכונה משנת 1998. אנחנו אופים הכל מאפס מדי בוקר עם קמח מקומי ושיטות מסורתיות.
 
-## What we offer
+## מה אנחנו מציעים
 
-- Fresh sourdough and artisan loaves
-- French pastries and croissants
-- Custom birthday and wedding cakes
-- Coffee and breakfast items
+- לחמי מחמצת ולחמי בוטיק טריים
+- מאפים צרפתיים וקרואסונים
+- עוגות יום הולדת וחתונה בהזמנה אישית
+- קפה וארוחות בוקר
 
-## Hours
+## שעות פתיחה
 
-Open daily 6 AM – 6 PM, closed Sundays.
+פתוח ימים א׳–ו׳ 06:00–18:00, סגור בשבת.

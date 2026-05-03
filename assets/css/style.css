@@ -22,10 +22,10 @@ html, body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Heebo", "Rubik", "Arial Hebrew", Arial, "Helvetica Neue", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -202,7 +202,7 @@ main.container {
 .business-content { font-size: 1rem; }
 .business-content h2,
 .business-content h3 { margin-top: 1.5rem; }
-.business-content ul { padding-left: 1.25rem; }
+.business-content ul { padding-inline-start: 1.25rem; }
 
 .contact-block {
   margin-top: 2rem;

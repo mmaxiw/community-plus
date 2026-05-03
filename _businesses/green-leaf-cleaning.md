@@ -1,22 +1,22 @@
 ---
-name: Green Leaf Cleaning Co.
-category: Home Services
+name: עלה ירוק — שירותי ניקיון
+category: שירותי בית
 image: https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=70
-tags: [cleaning, eco-friendly, home, professional, recurring]
-description: Eco-friendly home and office cleaning with non-toxic products.
+tags: [ניקיון, אקולוגי, בית, מקצועי, קבוע]
+description: ניקיון בית ומשרד אקולוגי, עם חומרים לא רעילים.
 contact:
-  phone: "+1 555 222 1010"
+  phone: "052-2221010"
   email: book@greenleafcleaning.example
   website: https://greenleafcleaning.example
 ---
 
-We use plant-based, non-toxic cleaning products that are safe for kids, pets, and the planet.
+אנחנו משתמשים בחומרי ניקוי על בסיס צמחי, לא רעילים, בטוחים לילדים, חיות מחמד ולכוכב.
 
-## Services
+## שירותים
 
-- Weekly, bi-weekly, or monthly recurring cleans
-- Deep cleans and move-in/move-out
-- Office cleaning
-- Eco-friendly product line for home use
+- ניקיונות שבועיים, דו-שבועיים או חודשיים
+- ניקיון יסודי וניקיון לכניסה/יציאה מדירה
+- ניקיון משרדים
+- מוצרי ניקוי אקולוגיים לשימוש ביתי
 
-First clean 20% off for new customers.
+ניקיון ראשון ב-20% הנחה ללקוחות חדשים.

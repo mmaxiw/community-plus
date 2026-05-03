@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="search-section">
-  <input type="search" id="search-input" placeholder="Search by name, service, category, or tag…" autocomplete="off" autofocus>
+  <input type="search" id="search-input" placeholder="חיפוש לפי שם, שירות, קטגוריה או תגית…" autocomplete="off" autofocus>
   <div id="active-filters" aria-live="polite"></div>
   <p id="result-count" class="result-count" aria-live="polite"></p>
 </section>
@@ -38,6 +38,6 @@ layout: default
   {% endfor %}
 </section>
 
-<p id="empty-state" class="empty-state" hidden>No matches. Try a different search or remove a filter.</p>
+<p id="empty-state" class="empty-state" hidden>לא נמצאו תוצאות. נסו חיפוש אחר או הסירו סינון.</p>
 
 <script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>

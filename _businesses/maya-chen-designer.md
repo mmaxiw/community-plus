@@ -1,20 +1,20 @@
 ---
-name: Maya Chen — Graphic Designer
-category: Creative & Professional
+name: נועה כהן — עיצוב גרפי
+category: יצירתי ומקצועי
 image: https://images.unsplash.com/photo-1561070791-2526d30994b8?w=800&q=70
-tags: [design, branding, freelance, logo, professional]
-description: Freelance graphic designer specializing in brand identity for small businesses.
+tags: [עיצוב, מיתוג, פרילנס, לוגו, מקצועי]
+description: מעצבת גרפית עצמאית, מתמחה בזהות מותג לעסקים קטנים.
 contact:
-  email: maya@mayachen.example
-  website: https://mayachen.example
+  email: noa@noacohen.example
+  website: https://noacohen.example
 ---
 
-I help small businesses and solo professionals build memorable brand identities. From logo design to full visual systems.
+אני עוזרת לעסקים קטנים ולפרילנסרים לבנות זהות מותג בלתי נשכחת — מעיצוב לוגו ועד מערכות חזותיות שלמות.
 
-## Recent work
+## עבודות אחרונות
 
-- Logo and brand guidelines for local restaurants
-- Packaging design for indie product launches
-- Web design for service businesses
+- לוגו וקווים מנחים למסעדות מקומיות
+- עיצוב אריזות להשקות מוצרים
+- עיצוב אתרים לעסקי שירות
 
-Available for new projects. Get in touch for a quote.
+זמינה לפרויקטים חדשים. צרו קשר להצעת מחיר.

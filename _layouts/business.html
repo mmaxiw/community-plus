@@ -19,14 +19,14 @@ layout: default
   </div>
   {% if page.contact %}
     <div class="contact-block">
-      <h3>Contact</h3>
+      <h3>יצירת קשר</h3>
       <ul class="contact-list">
-        {% if page.contact.phone %}<li><strong>Phone:</strong> <a href="tel:{{ page.contact.phone }}">{{ page.contact.phone }}</a></li>{% endif %}
-        {% if page.contact.email %}<li><strong>Email:</strong> <a href="mailto:{{ page.contact.email }}">{{ page.contact.email }}</a></li>{% endif %}
-        {% if page.contact.website %}<li><strong>Website:</strong> <a href="{{ page.contact.website }}" rel="noopener" target="_blank">{{ page.contact.website }}</a></li>{% endif %}
-        {% if page.contact.address %}<li><strong>Address:</strong> {{ page.contact.address }}</li>{% endif %}
+        {% if page.contact.phone %}<li><strong>טלפון:</strong> <a href="tel:{{ page.contact.phone }}" dir="ltr">{{ page.contact.phone }}</a></li>{% endif %}
+        {% if page.contact.email %}<li><strong>דוא״ל:</strong> <a href="mailto:{{ page.contact.email }}" dir="ltr">{{ page.contact.email }}</a></li>{% endif %}
+        {% if page.contact.website %}<li><strong>אתר:</strong> <a href="{{ page.contact.website }}" rel="noopener" target="_blank" dir="ltr">{{ page.contact.website }}</a></li>{% endif %}
+        {% if page.contact.address %}<li><strong>כתובת:</strong> {{ page.contact.address }}</li>{% endif %}
       </ul>
     </div>
   {% endif %}
-  <p class="back-link"><a href="{{ '/' | relative_url }}">← Back to all listings</a></p>
+  <p class="back-link"><a href="{{ '/' | relative_url }}">חזרה לכל העסקים</a></p>
 </article>
